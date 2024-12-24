@@ -32,17 +32,17 @@ table { border: 0; padding: 0; margin: 0; }
 #names .name.muted-chat { color: #f88; }
 #names .name.muted-chat:after { content: "MUTE"; position: absolute; top: -4px; right: 50%; font-size: 8px; }
 
-#piano { width: 95%; height: 20%; margin: auto; position: relative; overflow: hidden; padding-left: 1%; z-index: 1; }
+#piano { width: 95%; height: 20%; margin: auto; position: relative; overflow: hidden; padding-left: 1%; }
 #piano .key { float: left; width: 1.8%; height: 90%; border: 1px solid black; background: #fff; 
 	margin-left: -0.5%; margin-bottom: 100%;
 	box-shadow: 1px 2px 5px #000; -webkit-box-shadow: 1px 2px 5px #000; -moz-box-shadow: 1px 2px 5px #000;
 	border-radius: 2px; -webkit-border-radius: 2px; -moz-border-radius: 2px;
-	transition: background 0.2s ease-out; -webkit-transition: background 0.2s ease-out; -moz-transition: background 0.2s ease-out;
-	-o-transition: background 0.2s ease-out; padding: 0px;
-	overflow: hidden; cursor: pointer; }
+	transition: background 4s ease-out; -webkit-transition: background 4s ease-out; -moz-transition: background 4s ease-out;
+	-o-transition: background 4s ease-out; padding: 0px;
+	overflow: hidden; }
 #piano .key.c, #piano .key.f { margin-left: 0; }
 #piano .key.sharp { width: 1.2%; height: 50%; background: #000; margin-left: -0.9%;
-	position: relative; z-index: 2; }
+	position: relative; }
 
 #piano .key.loading { background: #888; }
 

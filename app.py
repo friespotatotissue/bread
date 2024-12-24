@@ -9,6 +9,9 @@ def serve_index():
 
 @app.route('/piano/<path:path>')
 def serve_piano_files(path):
+    # Handle audio files from the audio/default directory
+    if path.endswith('.wav.mp3'):
+        return send_from_directory('piano/audio/default', path)
     return send_from_directory('piano', path)
 
 if __name__ == '__main__':
